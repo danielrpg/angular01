@@ -1,1 +1,9 @@
-Learning Angular JS
+DESARROLLO DE SISTEMA
+==========================
+
+Para poder desarrollar el Sistema usaremos Spring Boot y Angular js como frameworks 
+aprovecharemos su potencial para el desarrollo agil.
+
+1.- Creacion de un proyecto en Spring.
+2.- Conexion a Base de datos (Como Gestor de Base de datos PostgreSQL).
+3.- Crear nuestra primera tabla y listarlo en Spring Boot.
