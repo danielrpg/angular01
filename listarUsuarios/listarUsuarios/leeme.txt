@@ -1,0 +1,71 @@
+Vamos a crear nuestro primer domain segun JPA a la tabla de base de datos
+en nuestro caso crearemos una tabla en la base de datos 
+
+tabla :   
+
+users
+  -> id - sera el id de usuario
+  -> user_name  - el nombre de usuario
+  -> user_password - contrasena del usuario
+  -> user_mail -  el email del usuario
+  -> name  -> nombre
+  -> last_name -> apellido
+  -> user_privilege -> el estado 0 inactivo, 1 activo
+
+script
+==================
+
+CREATE TABLE users
+(
+  id serial NOT NULL,
+  user_name character varying(80) NOT NULL,
+  user_password character(40) NOT NULL,
+  user_mail character varying(100) NOT NULL,
+  name character varying(100) NOT NULL,
+  last_name character varying(100) NOT NULL,
+  user_privilege integer NOT NULL DEFAULT 0,
+  CONSTRAINT user_pkey PRIMARY KEY (id)
+)
+
+========================
+Ahora vamos a crear nuestro objecto en JPA esto en el paquete domain donde se ubicara todos nuestros objetos de las tablas
+
+User Class
+====================
+
+@Entity(name="User")
+@Table(name="users")
+public class User {
+	
+	@Id
+	@Column(name="id")
+	private Integer id;
+	
+	@Column(name="user_name")
+	private String userName;
+	
+	@Column(name="user_password")
+	private String userPassword;
+	
+	@Column(name="user_mail")
+	private String userMail;
+	
+	@Column(name="name")
+	private String name;
+	
+	@Column(name="last_name")
+	private String lastName;
+	
+	@Column(name="user_privilege")
+	private int userPriv;
+	
+	
+}
+
+Ahora lo que vamos hacer es crear la interface Repositorio que nos permitira crear metodo CRUD por defecto
+
+Ahora vamos a registrar datos en la tabla de usuarios para poder listarlos.
+
+
+
+
