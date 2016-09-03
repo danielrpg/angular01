@@ -1,0 +1,21 @@
+{
+  "name": "App",
+  "authors": [
+    "danielrpg <daniel.fernandezgp@gmail.com>"
+  ],
+  "description": "AppCliente",
+  "main": "index.html",
+  "keywords": [
+    "App",
+    "cliente"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,37 @@
+Vamos a instalar Angular JS en su version 1.5.x 
+Para esto necesitamos los siguiente:
+
+1.- Crear una carpeta para la aplicacion cliente.
+2.- En mi caso que uso linux tengo que dar permisos para no tener problemas con las dependencias.
+3.- Instalar un gestor de dependencias usaremos bower.
+   npm install -g bower
+  Nota: Para poder tener instalado npm en nuestro sistema tenemos que instalar nodejs es bastante facil 
+4.- Tenemos que estar en nuestra carpeta app/ recientemente creado. Instalamos bower.
+
+  Nota: en caso de que nos aparesca un errores probablemente por los permisos entonces ejecutar
+   sudo npm install -g bower
+  Siempre tarda de acuerdo a la conexion de internet que se tiene
+
+5.- Una vez instalado el bower iniciamos nuestro proyecto bower. 
+    bower init
+
+6.- En mi caso usare visual studio code como herramienta para programar en angular js
+
+6.- Ahora pasamos a instalar angualar js
+
+   bower install angular 
+
+7.- Creamos nuestro primer archivo index.html
+
+8.- Agregamos la referencia a angular js
+<script src="bower_components/angular/angular.min.js"></script>
+
+9.- Ahora abrimos nuestro cliente con un navegador de nuestra preferencia en mi caso chrome
+
+10.- Esos seria los pasos para instalar nuestro ambiente angular js. 
+
+
+
+ 
+
+
